@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LWL-HL-ppQ" id="rIQ-MY-eay">
-                                    <frame key="frameInset" width="375" height="89"/>
+                                    <frame key="frameInset" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="wqE-ve-voK">
@@ -46,6 +46,7 @@
                                     <outlet property="nameLabel" destination="yYJ-n3-Ics" id="7lf-X9-s9z"/>
                                     <outlet property="photoImageView" destination="wqE-ve-voK" id="3yj-XX-xN5"/>
                                     <outlet property="ratingControl" destination="EYg-fV-pDI" id="hvP-D3-gGc"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="iEC-nU-GyU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -174,10 +175,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7QC-vq-GUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="856.79999999999995" y="148.87556221889056"/>
+            <point key="canvasLocation" x="919" y="476"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="320" height="320"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="iEC-nU-GyU"/>
+    </inferredMetricsTieBreakers>
 </document>
